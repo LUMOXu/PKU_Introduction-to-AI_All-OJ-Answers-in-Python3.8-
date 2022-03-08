@@ -93,7 +93,7 @@ print(bfs(m, n))
 """
 note:
 Due to strange reasons, the priority queue didn't sort all nodes about their f-s well. However, the program still
-ran correctly and satisfied the time and space limits.
+ran correctly and satisfied the time and memory limits.
 The most important part is the function f. The order of scanning i-s and j-s are not that important.
 Given the correct f, The length of the close_nodes_set is usually the same(sometimes outnumbers a little bit) as the 
 number of the steps, which means the program can act almost perfectly at finding the shortest route 
