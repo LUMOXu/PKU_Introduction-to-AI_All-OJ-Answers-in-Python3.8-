@@ -84,7 +84,9 @@ def bfs(m, n):
 m, n = map(int, input().split())
 open_nodes = queue.PriorityQueue()
 open_nodes.put((3 * m - 2, (0, 0, 1, 0)))
-# a status <- (f value, (missionaries at goal, cannibals at goal, boat state(0 means right to left, vice versa), steps))
+# a status <- (f value, (missionaries at goal, cannibals at goal, boat state(0 means right/goal to left/start, vice versa), steps))
+# f := a * missionaries at start + b * cannibals at start - c * boat state (in this program, a, b, c = 2, 1, 2), the node/state with less f value is expanded first.
+# slight changes to f usually doesn't matter unless b >= a, which causes the program to carry too much cannibals to the goal.
 close_nodes = set()
 close_nodes.add((0, 0, 1))
 # (missionaries at goal, cannibals at goal, boat status)
@@ -92,10 +94,10 @@ print(bfs(m, n))
 
 """
 note:
-Due to strange reasons, the priority queue didn't sort all nodes about their f-s well. However, the program still
-ran correctly and satisfied the time and memory limits.
-The most important part is the function f. The order of scanning i-s and j-s are not that important.
-Given the correct f, The length of the close_nodes_set is usually the same(sometimes outnumbers a little bit) as the 
-number of the steps, which means the program can act almost perfectly at finding the shortest route 
-instead of doing simple dfs searching. (Doing simple dfs in python always results in TLE)
+Due to strange reasons, the priority queue didn't sort all nodes/states about their f values well. However, the program still
+ran correctly and satisfied the time and memory limits. You can sort the nodes/states correctly to get a better result. For the size of the close_nodes_set is small, you
+can even use a list, instead of a priority queue.
+The most important part of the program is the function f. The order of scanning i-s and j-s is not that important.
+Given the correct f, The length of the close_nodes_set is usually the same as (sometimes outnumbers a little bit) the number of the steps, which means the program can act 
+almost perfectly at finding the shortest route instead of doing simple dfs searching. (For this problem, doing simple dfs in python always results in TLE)
 """
