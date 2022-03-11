@@ -102,5 +102,5 @@ Given the correct f, The length of the close_nodes_set is usually the same as (s
 almost perfectly at finding the shortest route instead of doing simple dfs searching. (For this problem, doing simple dfs in python always results in TLE)
 
 Memory used: 4560 kB
-Time used: 130 ms
+Time used: 130 ms (single test case)
 """
