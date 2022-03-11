@@ -111,4 +111,7 @@ for i in range(n):
 
 """
 note: Simple dfs algorithm. An ordinary Sudoku takes 0.9-100 ms.
+
+Memory used: 4052 kB
+Time used: 9380 ms
 """
