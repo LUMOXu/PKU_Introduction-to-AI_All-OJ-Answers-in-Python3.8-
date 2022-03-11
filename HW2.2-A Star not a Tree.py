@@ -102,4 +102,7 @@ print(round(final_dist))
 """
 note: Actually, this problem isn't an adversarial search problem.
 See https://www.cnblogs.com/maoerbao/p/11532649.html for more details on the algorithm.
+
+Memory used: 3732 kB
+Time used: 32 ms
 """
