@@ -100,4 +100,7 @@ can even use a list, instead of a priority queue.
 The most important part of the program is the function f. The order of scanning i-s and j-s is not that important.
 Given the correct f, The length of the close_nodes_set is usually the same as (sometimes outnumbers a little bit) the number of the steps, which means the program can act 
 almost perfectly at finding the shortest route instead of doing simple dfs searching. (For this problem, doing simple dfs in python always results in TLE)
+
+Memory used: 4560 kB
+Time used: 130 ms
 """
