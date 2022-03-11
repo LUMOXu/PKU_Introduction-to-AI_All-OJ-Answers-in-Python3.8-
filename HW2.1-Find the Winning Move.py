@@ -143,4 +143,7 @@ pieces in a row or column. So it's wiser for you and your opponent to put your p
 the pruning algorithm.
 If the 'order' is [i for i in range(16)], running the program on OJ will result in TLE. Using the order shown in 
 the program shortens the time to around 1300 ms.
+
+Memory used: 3804 kB
+Time used: 1324 ms
 """
