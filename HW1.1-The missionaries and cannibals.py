@@ -2,6 +2,10 @@
 PKU, INTRODUCTION TO AI
 LECTURE 5 - GLOBAL SEARCH - HW 01 - The Missionaries and Cannibals
 
+Total TL: 100000 ms (for Python)
+TL for a single test case: 10000 ms (for Python)
+ML: 65536 kB
+
 DESCRIPTION
 The missionaries and cannibals problem is usually stated as follows: Three missionaries and three cannibals are on one
 side of a river, along with a boat that can hold one or two people. Find a way to get everyone to the other side,
