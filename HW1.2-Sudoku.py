@@ -2,6 +2,9 @@
 PKU, INTRODUCTION TO AI
 LECTURE 5 - GLOBAL SEARCH - HW 02 - Sudoku
 
+Total TL: 20000 ms (for Python)
+ML: 65536 kB
+
 DESCRIPTION
 Sudoku is a very simple task. A square table with 9 rows and 9 columns is divided to 9 smaller squares 3x3 as shown
 on the Figure. In some of the cells are written decimal digits from 1 to 9. The other cells are empty. The goal is to
